@@ -2,12 +2,15 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>CLAUDIX — Your Personal Digital Space</title>
 
-  <meta name="theme-color" content="#F3F7F7">
+  <!-- Warna status bar mengikuti tema terang & gelap -->
+  <meta name="theme-color" content="#F7F9F8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111918" media="(prefers-color-scheme: dark)">
+  
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="CLAUDIX">
 
   <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
@@ -21,13 +24,18 @@
       width: 100%;
       height: 100%;
       overflow: hidden;
-      background-color: #F3F7F7;
+      background-color: #F7F9F8;
+    }
+    @media (prefers-color-scheme: dark) {
+      html, body { background-color: #111918; }
     }
     iframe {
       position: fixed;
-      inset: 0;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
+      height: 100dvh;
       border: none;
     }
   </style>
@@ -35,7 +43,7 @@
 <body>
   <iframe 
     src="https://script.google.com/macros/s/AKfycbzMk0EfEE9CKj7oHmGD9Y6SVUCO-owVuvkAsFKhikApaAxztuXnDroIqZV1iZdd-NABqQ/exec" 
-    allow="camera; microphone; clipboard-read; clipboard-write"
+    allow="camera; microphone; clipboard-read; clipboard-write; fullscreen"
     allowfullscreen>
   </iframe>
 </body>
