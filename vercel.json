@@ -1,0 +1,16 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Permissions-Policy",
+          "value": "clipboard-read=(self \"https://script.google.com\" \"https://*.googleusercontent.com\"), clipboard-write=(self \"https://script.google.com\" \"https://*.googleusercontent.com\"), fullscreen=(self \"https://script.google.com\" \"https://*.googleusercontent.com\")"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
