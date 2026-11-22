@@ -1,38 +1,36 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#0D4F4B" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Claudix" />
-  
+
   <title>Claudix — Your Personal Digital Space</title>
   <link rel="icon" type="image/png" href="/icon-192.png" />
   <link rel="apple-touch-icon" href="/icon-192.png" />
   <link rel="manifest" href="/manifest.json" />
 
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     html, body {
+      margin: 0;
+      padding: 0;
       width: 100%;
       height: 100%;
       overflow: hidden;
-      background-color: #0D4F4B;
     }
     iframe {
-      position: fixed;
-      inset: 0;
+      display: block;
       width: 100%;
       height: 100%;
       border: none;
-      display: block;
     }
   </style>
 </head>
 <body>
-  <iframe 
+  <iframe
     id="appFrame"
     src="https://script.google.com/macros/s/AKfycbzMk0EfEE9CKj7oHmGD9Y6SVUCO-owVuvkAsFKhikApaAxztuXnDroIqZV1iZdd-NABqQ/exec"
     allow="clipboard-read; clipboard-write; camera; microphone; fullscreen"
